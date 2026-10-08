@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Yeiman Y</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana, sans-serif;
+            background: #fff7ed;
+            color: #332b25;
+        }
+
+        header {
+            background: #b94d28;
+            color: white;
+            padding: 24px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 22px auto;
+            padding: 0 15px;
+        }
+
+        article {
+            background: #ffffff;
+            border: 1px solid #f0c8ac;
+            border-radius: 6px;
+            padding: 16px;
+            margin-bottom: 18px;
+        }
+
+        h2 {
+            color: #a64020;
+        }
+
+        .datos {
+            background: #fff0df;
+            padding: 12px;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #dfb89e;
+            padding: 9px;
+            text-align: left;
+        }
+
+        th {
+            background: #f5d5bd;
+        }
+
+        tr:nth-child(even) {
+            background: #fffaf5;
+        }
+
+        button {
+            background: #b94d28;
+            color: white;
+            border: 0;
+            padding: 9px 13px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background: #873719;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px;
+            color: #72584b;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 12px auto;
+            }
+
+            article {
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 contenteditable="true">Perfil de Yeiman Y</h1>
+        <p contenteditable="true">Conociendo un poco sobre mí</p>
+    </header>
+
+    <main>
+
+        <article>
+            <h2>Mis datos personales</h2>
+
+            <div class="datos">
+                <p>Nombre: <span contenteditable="true">Yeiman Y</span></p>
+                <p>Edad: <span contenteditable="true">15 años</span></p>
+                <p>Curso: <span contenteditable="true">Décimo</span></p>
+                <p>Actividad favorita: <span contenteditable="true">Jugar fútbol</span></p>
+            </div>
+        </article>
+
+        <article>
+            <h2>Mis pasatiempos</h2>
+
+            <ul>
+                <li contenteditable="true">Jugar fútbol con mis amigos</li>
+                <li contenteditable="true">Escuchar música</li>
+                <li contenteditable="true">Ver películas y descansar</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Mis metas</h2>
+
+            <ol>
+                <li contenteditable="true">Terminar mis estudios</li>
+                <li contenteditable="true">Mejorar en el deporte</li>
+                <li contenteditable="true">Aprender algo nuevo cada día</li>
+            </ol>
+        </article>
+
+        <article>
+            <h2>Tabla de información</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Aspecto</th>
+                        <th>Información</th>
+                        <th>Lo que me gusta</th>
+                        <th>Mi objetivo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Nombre</td>
+                        <td contenteditable="true">Yeiman Y</td>
+                        <td contenteditable="true">Compartir con amigos</td>
+                        <td contenteditable="true">Conocer nuevas personas</td>
+                    </tr>
+
+                    <tr>
+                        <td>Edad</td>
+                        <td contenteditable="true">15 años</td>
+                        <td contenteditable="true">Aprender cosas nuevas</td>
+                        <td contenteditable="true">Seguir estudiando</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tiempo libre</td>
+                        <td contenteditable="true">Deporte</td>
+                        <td contenteditable="true">Fútbol</td>
+                        <td contenteditable="true">Practicar más</td>
+                    </tr>
+
+                    <tr>
+                        <td>Entretenimiento</td>
+                        <td contenteditable="true">Música</td>
+                        <td contenteditable="true">Escuchar canciones</td>
+                        <td contenteditable="true">Descubrir artistas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
+        <article>
+            <h2>Una frase para recordar</h2>
+
+            <p contenteditable="true">
+                Con esfuerzo y paciencia se pueden alcanzar muchas metas.
+            </p>
+
+            <button id="cambiarColor">
+                Cambiar color del encabezado
+            </button>
+        </article>
+
+    </main>
+
+    <footer contenteditable="true">
+        Página personal de Yeiman Y
+    </footer>
+
+    <script>
+        const boton = document.getElementById("cambiarColor");
+        let colorOriginal = true;
+
+        boton.addEventListener("click", function () {
+            const encabezado = document.querySelector("header");
+
+            if (colorOriginal) {
+                encabezado.style.backgroundColor = "#287a67";
+            } else {
+                encabezado.style.backgroundColor = "#b94d28";
+            }
+
+            colorOriginal = !colorOriginal;
+        });
+    </script>
+
+</body>
+</html>
